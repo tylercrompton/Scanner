@@ -1,0 +1,3 @@
+#Scanner
+
+This library provides a `Scanner` class similar to that of Java's. It has its differences, but it will prove quite useful in your IO parsing toolset.
