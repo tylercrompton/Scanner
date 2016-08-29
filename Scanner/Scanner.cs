@@ -393,7 +393,7 @@ namespace System.IO
 				{
 					if (!hasLeftSide)
 					{
-						foreach (char character in token.ToString())
+						foreach (var character in token.ToString())
 							_characterBuffer.Enqueue(character);
 
 						throw;
@@ -486,7 +486,7 @@ namespace System.IO
 				result.Append(ReadChar());
 
 			result.Remove(result.Length - delimiter.Length, delimiter.Length);
-			foreach (char character in delimiter)
+			foreach (var character in delimiter)
 				_characterBuffer.Enqueue(character);
 
 			return result.ToString();
